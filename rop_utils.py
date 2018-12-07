@@ -72,7 +72,7 @@ def analize_angles(splits, layer, max_repetition, rop_class, meas, original_file
     c = concept
     while split < len(splits):
         print 'Extracting RCV at layer: ', layer
-        acts = np.load('./rcv/phis/0_concepts_phis_'+layer+'.npy')
+        acts = np.load('../rcv/phis/0_concepts_phis_'+layer+'.npy')
         #for c in concepts:
         #    if c not in rcvs.keys():
         #        rcvs[c] = {}
@@ -176,7 +176,7 @@ def compute_regression(max_rep, layers, meas, original_files, acts, labels, conc
     for repetition in range(max_rep):
         for l in layers[:]:
             print 'Layer: ', l
-            acts=np.load('./rcv/phis/0_concepts_phis_'+l+'.npy')    
+            acts=np.load('../rcv/phis/0_concepts_phis_'+l+'.npy')    
             print acts.shape
             
             if l not in regression_outputs.keys():
@@ -237,7 +237,7 @@ def get_rcv(layer, max_repetition, rop_class, meas, original_files, acts, labels
     repetition = 0
     while repetition < max_repetition:
         print 'Extracting RCV at layer: ', layer
-        acts = np.load('./rcv/phis/0_concepts_phis_'+layer+'.npy')
+        acts = np.load('../rcv/phis/0_concepts_phis_'+layer+'.npy')
         for c in concepts:
             if c not in rcvs.keys():
                 rcvs[c] = {}
