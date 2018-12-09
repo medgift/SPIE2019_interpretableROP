@@ -20,7 +20,7 @@ We show in the following the coefficient of determination of the regression conc
     <img src="results/dynamics_normal.png" width=700px>
 </p>
 <p align="left">
-    <img src="results/dynamics_plus.png" width=700px>
+    <img src="results/dynamics_plus(1).png" width=700px>
 </p>
 
 UMAP representation at the Mixed 5c Concatenated layer of the Inception model.  The three colors respresent the three classes, respectively normal as green, pre-plus as blue and plus as red.  The color intensity and the size of the data point have been changed to show the value of the concept measure.  Smaller values of the concept measure correspond to less bright, smaller data points. 
