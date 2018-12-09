@@ -289,13 +289,13 @@ def compute_sensitivity_scores(concept, rcv, model, layer, rop_class, repetition
     #for sample in range(len(idxs[:])):
     for sample in range(len(inputs)):
         #print sample
-        derivative = tcav_utils.compute_tcav(
+        derivative = rcv_utils.compute_rcv(
                                             model, -1, 0,
                                             np.expand_dims(inputs[sample], axis=0), 
                                             wrt_tensor=model.get_layer(layer).output
                                             )
         flattened_derivative = derivative.ravel()
         score = np.multiply(-1, np.dot(flattened_derivative, rcv))
-        filet=open('plus_tcav_'+concept+'_'+str(r)+'.txt', 'a')
+        filet=open('plus_rcv_'+concept+'_'+str(r)+'.txt', 'a')
         filet.write(str(repetition)+','+str(score)+'\n')
         filet.close() 
