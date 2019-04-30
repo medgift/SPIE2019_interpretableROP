@@ -1,5 +1,5 @@
 # SPIE2019_interpretableROP
-This repository contains the code to interpret the classification of the Plus disease in Rethinopathy of Prematurity images by a deep CNN. This paper is to be presented at SPIE2019 Medical Imaging at the Computer Aided Diagnosis track. 
+This repository contains the code to interpret the classification of the Plus disease in Rethinopathy of Prematurity images by a deep CNN. This paper was presented at SPIE2019 Medical Imaging at the Computer Aided Diagnosis track. 
 
 Computer-aided diagnosis tools for Retinopathy of Prematurity (ROP) base their decisions on handcrafted retinal features that highly correlate with expert diagnoses, such as arterial and venous curvature, tortuosity and dilation. Deep learning leads to performance comparable to those of expert physicians, albeit not ensuring that the same clinical factors are learned in the deep representations. In this paper, we investigate the relationship between the handcrafted and the deep learning features in the context of ROP diagnosis.
 Results show that the curvature, diameter and tortuosity of the segmented vessels are indeed relevant to the classification. Among the potential applications of this method, the analysis of borderline cases between the classes and of network faults, in particular, can be used to improve the performance.
